@@ -3,8 +3,14 @@ import userRoutes from './routes/user'
 const app = express();
 const port = 3000;
 
+app.use(express.json());
+
 app.get('/', (req, res) => {
     res.send('The sedulous hyena ate the antelope!');
+});
+
+app.post('/', (req, res) => {    
+    res.send(req.body);
 });
 
 app.use('/user/', userRoutes);
