@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { getUserEmailById, InputUser } from '../user.controller';
+import { getUserEmailById, InputUser } from '../controllers/user.controller';
 import Faker from 'faker';
 
 describe('Get user email by _id', () => {
